@@ -1,62 +1,92 @@
-body{
-    font-family: Arial, sans-serif;
-    background: linear-gradient(to right, #dbeafe, #f0f9ff);
+/* RESET */
+*{
     margin: 0;
     padding: 0;
-    color: #333;
+    box-sizing: border-box;
+}
+
+/* BODY */
+body{
+    font-family: Arial, sans-serif;
+    background: url("images.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: white;
     text-align: center;
 }
 
+/* DARK OVERLAY */
+.overlay{
+    background-color: rgba(0,0,0,0.75);
+    min-height: 100vh;
+    padding: 40px;
+}
+
+/* NAVIGATION */
 nav{
-    background-color: #0077cc;
-    padding: 15px;
+    margin-top: 20px;
 }
 
 nav a{
     color: white;
     text-decoration: none;
     margin: 15px;
-    font-weight: bold;
     font-size: 18px;
+    font-weight: bold;
+    transition: 0.3s;
 }
 
 nav a:hover{
-    text-decoration: underline;
+    color: red;
 }
 
-.container{
-    width: 80%;
-    margin: 30px auto;
-    background-color: white;
-    padding: 30px;
-    border-radius: 12px;
-    box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
-}
-
+/* HEADINGS */
 h1{
-    color: #0077cc;
+    color: red;
+    font-size: 48px;
     margin-bottom: 20px;
 }
 
-h2{
-    color: #005fa3;
-    margin-top: 25px;
+/* CARD CONTAINER */
+.card{
+    background-color: white;
+    color: black;
+    width: 70%;
+    margin: 40px auto;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(255,0,0,0.5);
 }
 
+/* PROFILE IMAGE */
+.profile-img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 5px solid red;
+    margin-bottom: 20px;
+}
+
+/* PARAGRAPHS */
 p{
+    font-size: 18px;
     line-height: 1.8;
-    font-size: 17px;
 }
 
-ul, ol{
-    text-align: left;
+/* BUTTON */
+.btn{
     display: inline-block;
-    margin-top: 10px;
+    margin-top: 20px;
+    padding: 12px 25px;
+    background-color: red;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: 0.3s;
 }
 
-footer{
-    background-color: #0077cc;
-    color: white;
-    padding: 15px;
-    margin-top: 30px;
+.btn:hover{
+    background-color: black;
+    border: 2px solid red;
 }
